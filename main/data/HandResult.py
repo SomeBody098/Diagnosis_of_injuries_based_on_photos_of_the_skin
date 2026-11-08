@@ -1,4 +1,3 @@
-from typing import List, Optional
 from dataclasses import dataclass, field
 from typing import List, Optional
 
@@ -8,7 +7,7 @@ class HandResult:
     landmarks_px: List[List[float]]
     landmarks_normalized: List[List[float]]
     hand_bbox: List[int]
-    hand_hull: List[List[int]]
+    hand_hull: List[List[float]]
     has_clothing: bool = False
     clothing_bbox: Optional[List[int]] = None
     has_tattoo: bool = False

@@ -4,7 +4,7 @@ from ultralytics import YOLO
 from .Detector import Detector
 from typing import Optional, Tuple
 
-class TattooDetector(Detector):
+class TattooDetector(Detector): #TODO ни разу не тестировалась - найти подходящие фото для анализа
     def __init__(self, model_path: str):
         self.model = YOLO(model_path)
 

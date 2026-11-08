@@ -4,7 +4,7 @@ from fashn_human_parser import FashnHumanParser
 from .Detector import Detector
 from typing import Optional
 
-class ClothingDetector(Detector):
+class ClothingDetector(Detector): # FIXME бывает принимает за одежду просто ткань, например, на которой лежит рука.
     def __init__(self):
         self.parser = FashnHumanParser()
 
